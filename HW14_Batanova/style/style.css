@@ -1,0 +1,49 @@
+section {
+  background-color: pink;
+  max-width: 300px;
+  height: 300px;
+  color: #f00;
+  padding: 40px;
+  text-align: center;
+}
+
+section .love {
+  font-size: 100px;
+  -webkit-animation: love 2s infinite;
+          animation: love 2s infinite;
+}
+
+@-webkit-keyframes love {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-filter: drop-shadow(0 0 25px #000);
+            filter: drop-shadow(0 0 25px #000);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes love {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-filter: drop-shadow(0 0 25px #000);
+            filter: drop-shadow(0 0 25px #000);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

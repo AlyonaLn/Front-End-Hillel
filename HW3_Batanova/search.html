@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <style>
+        .nav-list li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: cornflowerblue;">
+        <h1 style="text-align: center;">АВТОРУХ</h1>
+        <nav style="text-align: center;" class="main-nav">
+            <ul class="nav-list">
+                <Li><a href="index.html">Главная</a></Li>
+                <Li><a href="search.html">Поиск</a></Li>
+                <Li><a href="registration.html">Регистрация</a></Li>
+                <Li><a href="authorization.html">Авторизация</a></Li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td><img src="hondacivic.jpg" alt="honda"></td>
+                <td>
+                    <form action="#" method="GET">
+                        <fieldset>
+                            <legend>Поиск</legend>
+                            <p><label for="Type">Тип кузова</label>
+                            <select id="Type" name="name">
+                                <option value="">Седан</option>
+                                <option value="">Хэтчбек</option>
+                                <option value="">Универсал</option>
+                                <option value="">Купе</option>
+                                <option value="">Кабриолет</option>
+                            </select>
+                            </p>
+                            <p>
+                            <label for="Brand">Марка авто</label>
+                                <select id="Brand" name="name">
+                                    <option value="">MERCEDES</option>
+                                    <option value="">TOYOTA</option>
+                                    <option value="">SKODA </option>
+                                    <option value="">HYUNDAI</option>
+                                    <option value="">Nissan</option>
+                                    <option value="">Honda</option>
+                                    <option value="">BMW</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="Country">Страна производитель</label>
+                                <select id="Country" name="name" multiple>
+                                    <option value="">Украина</option>
+                                    <option value="">Япония</option>
+                                    <option value="">Германия </option>
+                                    <option value="">Корея</option>
+                                    <option value="">Америка</option>
+                                    <option value="">Италия</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="Pricemin">Цена</label>
+                                <input id="Pricemin" type="number" placeholder="от">
+                                <input id="Pricemax" type="number" placeholder="до">
+                            </p>
+                            <p>
+                                <label for="Year">Год выпуска</label>
+                                <select id="Year" name="name">
+                                    <option value="">2010</option>
+                                    <option value="">2011</option>
+                                    <option value="">2012</option>
+                                    <option value="">2013</option>
+                                    <option value="">2014</option>
+                                    <option value="">2015</option>
+                                    <option value="">2016</option>
+                                </select>
+                                <select name="name">
+                                    <option value="">2010</option>
+                                    <option value="">2011</option>
+                                    <option value="">2012</option>
+                                    <option value="">2013</option>
+                                    <option value="">2014</option>
+                                    <option value="">2015</option>
+                                    <option value="">2016</option>
+                                </select>
+                            </p>
+                            <p>Состояние <br>
+                                <label>Битая<input id="Broken" type="checkbox"></label>  
+                                <label>В кредите<input id="credit" type="checkbox"></label> 
+                                <label>Не растаможена<input id="customs" type="checkbox"></label>
+                            </p>
+                            <p>Тип топлива<br>
+                                <label>Бензин<input id="Petrol" type="checkbox"></label><br>
+                                <label>Газ<input id="Gas" type="checkbox"></label><br>
+                                <label>Дизель<input id="Diesel" type="checkbox"></label><br>
+                                <label>Гибрид<input id="Hybrid" type="checkbox"></label><br>                            
+                                <label>Електрокар<input id="Electric" type="checkbox"></label><br>
+                            </p>
+                            <p>Тип коробки передач
+                                <label>Автомат<input id="automatically" type="radio"></label>
+                                <label>Механика<input id="Mechanics" type="radio"></label>
+                                <label>Вариатор<input id="variable" type="radio"></label>
+                            </p>
+                            <p>
+                                <label for="Colour">Цвет</label>
+                                <select id="Colour" name="name">
+                                    <option value="">Красный</option>
+                                    <option value="">Белый</option>
+                                    <option value="">Черный </option>
+                                    <option value="">Серый</option>
+                                    <option value="">Зеленый</option>
+                                    <option value="">Синий</option>
+                                    <option value="">Желтый</option>
+                                </select>
+                            </p>
+                            <p>Комфорт<br>
+                                <label>Люк<input id="Luke" type="checkbox"></label><br>   
+                                <label>Кожаный салон<input id="Leather" type="checkbox"></label><br>
+                                <label>Подогрев сидений<input id="Heated" type="checkbox"></label><br> 
+                                <label>Камера<input id="Camera" type="checkbox"></label><br>    
+                                <label>Парктроник<input id="parktronic" type="checkbox"></label><br>
+                            </p>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer style="background-color: cornflowerblue;">
+        <hr>
+        <p><strong><u>Контактная информация</u></strong></p>
+        <ul>
+            <li>Адрес <address>Киев Желянская12</address></li>
+            <li>mail <a href="mailto:autoruh@ukr.net">autoruh@ukr.net</a></li>
+            <li>Горячая линия<a href="collto:0800505800">0800505800</a></li>
+        </ul>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'forever_brush';
+    src: url(fonts/forever_brush_script.woff2) format(woff2);
+    src: url(fonts/forever_brush_script.woff) format(woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'ProximaNovaA';
+    src: url(fonts/ProximaNovaA-Regular.woff2) format(woff2);
+    src: url(fonts/ProximaNovaA-Regular.woff) format(woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'ProximaNovaT';
+    src: url(fonts/ProximaNovaT-Thin.woff2) format(woff2);
+    src: url(fonts/ProximaNovaT-Thin.woff) format(woff);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.main-nav {
+    text-transform: uppercase; 
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+.nav-list>li {
+    position: relative;
+}
+
+.nav-list>li:hover .drop-down{
+    display: block;
+}
+
+.nav-list li a {
+    font: 400 16px/1.5px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.burger-input,
+.menu__btn {
+    display: none;
+}
+
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    color: #fff;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 40px 5px 30px;
+    margin: 0 20px 0 0;
+}
+
+.drop-down {
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    right: -15px;
+    top: 100%;
+    width: 150px;
+    display: none;
+    transition: 0.2s;
+}
+
+.drop-down  li {
+    margin-left: 0;
+}
+
+.drop-down a {
+    display: block;
+    padding: 10px;
+}
+
+.Grandrestaurant {
+    background: url('images/bg-intro.jpg'), center/cover, no-repeat;
+    color: #fff;
+    min-height: 100vh;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 713px;
+    text-align: center; 
+}
+
+.grand h1 {
+    display: block;
+    font: 700 72px/0.5px 'ProximaNovaT', Verdana, Helvetica, sans-serif;
+
+}
+
+.grand p {
+    display: block;
+    font: 200 18px/1,5px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+}
+
+.our-story {
+    padding: 20px;
+    background-color: #962323;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 650px;
+}
+
+
+.img-container {
+    flex: 1 1 ;
+    max-height: 400px;
+    width: auto;
+}
+
+.text-conteiner {
+    flex: 1 1 ;
+    padding: 0 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+
+.text-conteiner h2 {
+    font: 400 50px/1,2px 'forever_brush', Verdana, Helvetica, sans-serif;
+    color: #fff;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.text-conteiner h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 10px);
+    height: 2px;
+    width: 110px;
+    background-color: #fff;
+}
+
+.text-conteiner p {
+    font: 400 18px/1,5px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    min-height: 300px;
+    background: url('images/bg-content.jpg'), center/100%, no-repeat ;
+    color: #fff;
+}
+
+.recipes h2 {
+    text-align: center;
+    font: 400 56px/1,2px 'forever_brush', Verdana, Helvetica, sans-serif;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.recipes h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 10px);
+    height: 2px;
+    width: 110px;
+    background-color: #f00;
+}
+
+.recipes p {
+    max-width: 500px;
+    text-align: center;
+    font: 500 18px/1,5px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+}
+
+.our-menu {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1024px;
+}
+
+.our-menu h3 {
+    text-align: center;
+    font: 400 56px/1.2px 'forever_brush', Verdana, Helvetica, sans-serif;
+    color: #0b0c0d;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.our-menu h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 10px);
+    height: 2px;
+    width: 110px;
+    background-color: #f00;
+}
+
+.type-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.position {
+    max-width: 440px;
+    margin: 0 20px;
+}
+
+.position h5 {
+    font: 500 16px/1,5px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    color: #0b0c0d;
+}
+
+.position p{
+    font: 500 16px/1,1px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    color: #0b0c0d;
+}
+
+.gallery {
+    display: flex;
+    overflow: auto;
+}
+
+.gallery-holder {
+    display: flex;
+}
+
+.gallery-img {
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img:hover .gallery-links {
+    transform: scale(1);
+}
+
+.gallery-links {
+    background: rgb(0,0,0, 0.6);
+    opacity: 0.4;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: scale(0);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.contacts {
+    background-color: #252529;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.contacts :first-child {
+    max-width: 150px;
+}
+
+.contact-type {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+
+footer {
+    background-color: #16171b;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+   
+}
+
+footer a {
+    font: 500 16px/1,2px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+.social a {
+    font: 500 16px/1,2px 'ProximaNovaA', Verdana, Helvetica, sans-serif;
+    color: #fff;
+    margin: 5px;
+}
+
+@media(max-width: 768px) {
+
+    .logo { 
+        width: 50%; 
+        float: right; 
+        }
+        
+
+    h1, h3, h4, p {
+        font-size: 80%;
+    }
+
+
+    img {
+        width: 100%;    
+        max-width: 100%;
+    } 
+    .our-story {
+        flex-direction: column;
+    }
+    
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .img-container  {
+        margin-top: 30px;
+    }
+
+    .gallery-img img {
+        max-width: 250px;
+        height: auto;
+    }
+   
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .grand h1 {
+        font: 700 42px/0.5px 'ProximaNovaT', Verdana, Helvetica, sans-serif;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+    .burger-input:checked ~ .nav-list {
+        display: block;
+    }
+    .nav-list {
+        width: 250px;
+        position: fixed;
+        top: 30px;
+        bottom: 0;
+        background-color: rgb(0,0,0, 0.6);;
+        display: none;
+    }
+
+    .nav-list li{
+        display: block;
+        padding: 10px;
+    }
+
+    .menu__btn {
+        display: flex;
+         align-items: center;  
+         position: fixed;  
+         top: 30px;  
+         right: 20px;  
+         width: 26px;  
+         height: 26px;  
+         cursor: pointer;  
+         z-index: 1;
+        }
+         
+         .menu__btn > span,.menu__btn > span::before,.menu__btn > span::after {
+            display: block;  
+            position: absolute;  
+            width: 100%;  
+            height: 2px;  
+            background-color: #fff;
+        }
+        
+        .menu__btn > span::before {
+            content: '';  
+            top: -8px;
+        }
+        
+        .menu__btn > span::after {
+            content: '';  
+            top: 8px;
+        }
+
+        #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+        }
+
+        #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;  
+            transform: rotate(0);
+        }
+        
+        #menu__toggle:checked ~ .menu__btn > span::after {  
+            top: 0;  
+            transform: rotate(90deg);
+        }
+
+        #menu__toggle:checked ~ .menu__box {  
+            visibility: visible;  
+            left: 0;
+        }
+}

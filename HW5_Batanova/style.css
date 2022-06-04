@@ -1,0 +1,45 @@
+.text a {
+    text-decoration: none;
+}
+
+.text {
+    list-style-type: none;
+    font-size: 18px;         
+}
+
+.text li:first-child a {
+    color: green;
+}
+
+.text li:nth-child(even) {
+    font-size: 20px;
+}
+
+.text li:nth-child(3n+1) {
+    background-color: yellow;
+}
+
+li::before {
+    content: "- ";
+}
+
+.text li:hover a{
+    color: violet;
+}
+
+.img-link {
+    text-decoration: none;
+    color: black;
+}
+
+.img-link::before {
+    content: url("cat.jpg");
+}
+
+.img-link::after {
+    content: attr(title);
+}
+
+.img-link:hover::after {
+    content: "Делай мир светлее";
+}

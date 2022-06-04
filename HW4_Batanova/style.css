@@ -1,0 +1,47 @@
+blockquote {
+    color: green;
+}
+
+a[href^="https"] {
+    color: red;
+}
+
+ul+p {
+    font-size: 26px;
+}
+
+a[title] {
+    border: 1px solid #067b09;
+}
+
+a[href^="http:"] {
+    color: #ff8d00;
+}
+
+h3 {
+    color: pink;
+}
+
+h3.texttitle {
+    color: initial;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box div p {
+    color: red;
+}
+
+.text {
+    color: blue;
+}
+
+.text+p {
+    color: green;
+}
+
+p[title="yellow"] {
+    color: yellow;
+}

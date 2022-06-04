@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url(font/LibreFranklin-Medium.ttf);
+    font-weight: 500;
+}
+
+body {
+    background: #141b23 url(images/bitmap.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+header {
+    max-width: 467px;
+    margin: 30px 50px;
+    padding: 2px;
+
+}
+
+ul li {
+    display: inline-block
+}
+
+header ul li a {
+    text-decoration: none;
+    margin: 10px;
+    font: 17px/20px 'LibreFranklin', Verdana, Helvetica, sans-serif;
+    color: #b1bbcb;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.65));
+    word-spacing: 5px;
+}
+
+header ul li:hover a {
+    color: #fff;
+}
+
+main {
+    max-width: 467px;
+    margin: 30px 50px;
+    padding: 2px;
+    
+}
+
+h1 {
+    font: 25px/30px 'LibreFranklin', Verdana, Helvetica, sans-serif;
+    color: #ffffff;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.65));
+}
+p{ 
+    font: 13px/16px 'LibreFranklin', Verdana, Helvetica, sans-serif;
+    color: #ffffff;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.65));
+}
+
+footer {
+    max-width: 467px;
+    margin: 200px 50px 45px 50px;
+    padding: 2px;   
+}
+
+span {
+    font: 12px/14px 'LibreFranklin', Verdana, Helvetica, sans-serif;
+    color: #ffffff;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.65));
+}
+
+
+.title {
+    color: #fff;
+    width: 300px;
+    height: 200px;
+    padding: 5px 10px 15px 15px;
+    margin: 10px 15px;
+    border-width: 5px; 
+    border-color: #0f0;
+    border-style: solid dashed none dashed;
+    display: block;
+
+}
